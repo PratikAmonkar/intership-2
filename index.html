@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <!-- <script type="text/javascript" src="index.js"></script> -->
+    <title>Add and Remove div's</title>
+  </head>
+  <body>
+    <section>
+      <h1 class="title_section">Add and Remove div's on button click</h1>
+    </section>
+    <!-- <hr> -->
+    <section>
+      <div class="button_section">
+        <button class="button_style" id="btn1" onclick="addNewDiv()">
+          Add
+        </button>
+        <button class="button_style" id="btn2" onclick="removeDiv()">
+          Remove
+        </button>
+      </div>
+    </section>
+    <section>
+      <div id="container_section"></div>
+    </section>
+  </body>
+  <script>
+    var count = 0;
+    var deleteCount = 0;
+    const divContainer = document.getElementById("container_section");
+    console.log(`Global count = ${count}`);
+
+    // function addNewDiv() {
+    //   var toAdd = document.createDocumentFragment();
+    //   for (var i = 0; i <= count; i++) {
+    //     var newDiv = document.createElement("div");
+    //     newDiv.id = `r${i}`;
+    //     newDiv.className = "div_style";
+    //     toAdd.appendChild(newDiv);
+    //   }
+    //   divContainer.appendChild(toAdd);
+    //   count+=1;
+    // }
+    // var count = 1;
+    function addNewDiv() {
+      count = count + 1;
+      console.log(`Local count = ${count}`);
+      const divContainer = document.getElementById("container_section");
+      const newDiv = document.createElement("div");
+      newDiv.id = `div${count}`;
+      newDiv.innerHTML = `Div ${count}`;
+      newDiv.classList.add("div_style");
+      divContainer.appendChild(newDiv);
+    }
+
+    function removeDiv() {
+      deleteCount = count
+      console.log(deleteCount);
+      // const data = document.getElementById("container_section").querySelectorAll(".div_style")
+      // console.log(data);
+      // data[0].parentNode.removeChild(data[0])
+      // count = count + 1;
+      // const divContainer = document.getElementById("container_section");
+      // var toAdd = document.createDocumentFragment();
+      // for (var i = 0; i < count - 1; i++) {
+      //   var newDiv = document.createElement("div");
+      //   newDiv.id = `r${i}`;
+      //   newDiv.className = "div_style";
+      //   toAdd.appendChild(newDiv);
+      // }
+      // divContainer.appendChild(toAdd);
+    }
+
+    // function removeDiv() {
+    //   const divElement = document.getElementById("");
+    // }
+  </script>
+</html>

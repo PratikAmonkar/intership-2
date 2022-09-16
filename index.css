@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.title_section {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2%;
+}
+
+.button_section {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+}
+
+.button_style {
+  padding: 11px 20px;
+  margin: 2%;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#btn1:hover {
+  background-color: green;
+  /* color: black; */
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#btn2:hover {
+    background-color: red;
+    /* color: black; */
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+#container_section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.div_style {
+  border: 1px solid black;
+  width: 20%;
+  height: 30%;
+  padding: 3%;
+  text-align: center;
+  margin: 2%;
+  border-radius: 20px;
+}
+
+.div_style:hover{
+    transform: scale(1.1);
+}
