@@ -13,7 +13,6 @@
 
 .button_section {
   display: flex;
-  /* flex-direction: row; */
   justify-content: center;
 }
 
@@ -28,14 +27,12 @@
 
 #btn1:hover {
   background-color: green;
-  /* color: black; */
   cursor: pointer;
   font-weight: bold;
 }
 
 #btn2:hover {
     background-color: red;
-    /* color: black; */
     cursor: pointer;
     font-weight: bold;
   }
